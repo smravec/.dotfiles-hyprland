@@ -8,7 +8,8 @@
 - **Bar** [eww](https://github.com/elkowar/eww)
 - **Text Editor** [vim](https://github.com/vim/vim)
 - **Music server** [mpd](https://github.com/MusicPlayerDaemon/MPD)
-- **Sound Setup** [pipewire](https://gitlab.freedesktop.org/pipewire/pipewire/)
+- **Sound Setup** [pipewire](https://gitlab.freedesktop.org/pipewire/pipewire/))
+- **Font** [JetBrainsMono](https://github.com/JetBrains/JetBrainsMono)
 
 # Gallery
 <img src=Preview2.png/>
