@@ -1,0 +1,80 @@
+(defvar home_dir "/home/$USER/.config/eww/Scripts")
+
+(defpoll clipboard_content :interval "1s"
+        `/home/$USER/.config/eww/Scripts/clipboard_manager.py`)
+
+(defpoll time :interval "20s"
+	`date +" %a %b %d %I:%M %p"`)
+
+(defpoll battery :interval "30s"
+	`/home/$USER/.config/eww/Scripts/battery.py`)
+
+(defpoll volume :interval "1s"
+        `/home/$USER/.config/eww/Scripts/volume.py`)
+
+(defpoll wifi :interval "3s"
+        `/home/$USER/.config/eww/Scripts/wifi.py`)
+
+(deflisten workspaces :initial "(box (label :text \"󰄯  󰄰  󰄰  󰄰  󰄰\" ))"
+	`/home/$USER/.config/eww/Scripts/workspaces.py`)
+
+(deflisten song_status :initial "Select playlist to begin"
+        `/home/$USER/.config/eww/Scripts/song_status.py`)
+
+
+(defwindow bar
+	:monitor 0
+	:windowtype "dock"
+	:geometry (geometry 
+			:width "100%"
+			:height "4%"
+			:anchor "top center"
+			)
+	:exclusive true	
+
+	(box :class "main-container"
+	
+	(box :class "workspaces" :halign "start" 
+	(literal :content "${workspaces}")
+	)
+
+	(box :class "music" :halign "center" :spacing 10 :space-evenly false  
+        	
+        (literal :content "(box :class \"music_icon\" (button :class \"music_icon_butt\" :onclick \"${home_dir}/toggle_playlist_selector.py\" \"󰲸\" ))")
+	(literal :halign "center" :content "(box :class \"music_text\" (label :text \"${song_status}\" ))")
+        )
+
+	(button :class "time_battery" :onclick "${home_dir}/toggle_clipboard_manager.py" :halign "end" "${wifi} ${volume} ${battery} ${time}"
+	)
+
+	)
+)
+
+(defwindow clipboard_manager
+  :monitor 0
+  :windowtype "normal"
+  :geometry (geometry
+              :y "-3px"
+              :x "83%"
+              :width "17%"
+              )
+  
+    (literal :content "${clipboard_content}" )
+  )
+
+
+(defwindow playlist_selector
+  :monitor 0
+  :windowtype "normal"
+  :geometry (geometry
+              :y "-4px"
+              :width "16%"
+              :anchor "top center"
+              )
+  (box :orientation "vertical"
+    (button :class "playlist_button" :onclick "${home_dir}/playlist_selector.py modern" "Modern")
+    (button :class "playlist_button" :onclick "${home_dir}/playlist_selector.py electronic" "Electronic") 
+    (button :class "playlist_button" :onclick "${home_dir}/playlist_selector.py classic" "Classic") 
+    (button :class "playlist_button" :onclick "${home_dir}/playlist_selector.py soundtracks" "Soundtracks")
+    )
+  )

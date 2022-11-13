@@ -1,0 +1,56 @@
+#!/usr/bin/python
+
+import subprocess
+
+home = "/home/$USER"
+
+print("What are you downloading ?")
+
+video_or_audio = input("video(0) or audio(1): ")
+
+url = input("url: ")
+
+#Video
+if video_or_audio == "0":
+    
+    title = input("title: ")
+
+
+    subprocess.run(f"yt-dlp {url} -P {home}/Videos -o '{title}'",shell=True)
+
+#Audio
+elif video_or_audio == "1": 
+
+    artist = input("artist: ")
+    title = input("title: ")
+
+    print("Add to playlist: Modern(1), Electronic(2), Classic(3), Soundtrack(4)")
+    playlist = input("playlist number: ")
+    
+    #Determine to which playlist should this song be added 
+    if playlist == "1":
+        playlist = "modern.m3u"
+    
+    elif playlist == "2":
+        playlist = "electronic.m3u"
+    
+    elif playlist == "3":
+        playlist = "classic.m3u"
+    
+    elif playlist == "4":
+        playlist = "soundtracks.m3u"
+
+    else:
+        print("incorrect input")
+        exit()
+
+    print("Are you sure everything is correct ?")
+    input("press any key to continue")
+
+    subprocess.run(f"yt-dlp --extract-audio --audio-format mp3 {url} -P {home}/Music -o '{artist}-{title}.mp3'",shell=True)
+    
+    print("Song downloaded")
+    
+    subprocess.run(f"echo '{artist}-{title}.mp3' >> {home}/.config/mpd/playlists/{playlist}",shell=True)
+    
+    print(f"Song added to playlist {playlist}")

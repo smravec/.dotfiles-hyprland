@@ -1,0 +1,121 @@
+$bg: rgba(#ffffff,0.1);
+$fg: #dddddd;
+$shadow: rgba(#000000,0.3);
+$border_col: rgba(#cccccc,0.18);
+$best_so_far: rgba(255,255,255,0.1); 
+
+.bar {
+	background-color: transparent;	
+}
+
+.main-container {
+	margin: 8px 12px 0px 12px;
+}
+
+.workspaces {
+	background-color: $bg;
+	border-radius: 10px;
+	color: $fg;	
+	margin-bottom: 10px;
+	border: 1px solid $border_col;
+	padding: 6px 20px 4px 20px;
+       	font-size: 22px;
+	box-shadow: 2px 2px 2px $shadow;
+	min-height: 25px;	
+}
+
+.music {
+	background-color: $bg;
+	border-radius: 10px;
+	color: $fg;
+	border: 1px solid $border_col;
+	padding: 5px 15px 5px 14px;
+	margin-bottom: 10px; 
+	font-size: 16px;
+	box-shadow: 2px 2px 2px $shadow;
+	min-width: 230px;
+}
+
+.music_icon {
+    font-size:20px;
+    margin-top: 1px;
+    margin-left:2px;
+}
+
+.music_icon_butt{
+    padding:0px;
+    background:transparent;
+    color: $fg;
+    border:none;
+    margin:0;
+    box-shadow:none;
+    font-style: normal;
+    text-shadow: none;
+}
+
+.music_icon_butt:hover{
+    background: rgba(#ffffff,0.1);
+    color:rgba(#000000,0.5);;
+}
+
+.music_text{
+    margin-top:2px;
+
+}
+
+.time_battery {
+	background: $bg;
+	border-radius: 10px;
+	color: $fg;
+	font-size: 16px;
+	padding: 5px 15px 5px 14px; 
+	margin-bottom: 10px;
+	border: 1px solid $border_col;
+	box-shadow: 2px 2px 2px $shadow;
+	text-shadow: none;
+}
+
+.time_battery:hover {
+    background: rgba(#ffffff,0.15);
+}
+
+.clipboard_manager{
+    background: transparent;
+}
+
+.clipboard_container{
+    margin-right:10px;
+}
+
+.clipboard-item{
+    background: rgba(#cccccc,0.9);
+    color: black;
+    text-shadow: none;
+    border: 1px solid $border_col;
+    border-radius: 7px;
+    box-shadow: 2px 2px 2px $shadow;
+}
+
+.clipboard-item:hover{
+    background:  rgba(#eeeeee,0.9);
+}
+
+.playlist_selector{
+    background: rgba(#cccccc,0.9);
+    border-radius: 10px;
+}
+
+.playlist_button{
+    background: transparent;
+    color: black;
+    text-shadow: none;
+    border: none;
+    border-bottom: 1px solid gray ;
+    box-shadow: none;
+    border-radius: 10px;
+}
+
+.playlist_button:hover{
+    background: rgba(#eeeeee,0.8);
+}
+

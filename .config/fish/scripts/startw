@@ -1,0 +1,8 @@
+#!/bin/sh
+
+cd ~
+
+export _JAVA_AWT_WM_NOREPARENTING=1
+export XCURSOR_SIZE=24
+
+exec Hyprland &> /dev/null

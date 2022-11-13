@@ -1,0 +1,11 @@
+#!/usr/bin/fish
+
+# dmount or default mount, mounts media at /mnt 
+# that can be edited without root permissions
+
+echo "Available devices are:"
+lsblk
+
+set device (read -P "input device name: ")
+
+sudo mount -o gid=wheel,fmask=113,dmask=002 /dev/$device /mnt
