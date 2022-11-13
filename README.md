@@ -9,3 +9,7 @@
 - **Text Editor** [vim](https://github.com/vim/vim)
 - **Music server** [mpd](https://github.com/MusicPlayerDaemon/MPD)
 - **Sound Setup** [pipewire](https://gitlab.freedesktop.org/pipewire/pipewire/)
+
+# Gallery
+<img src=Preview2.png/>
+<img src=Preview3.png/>
