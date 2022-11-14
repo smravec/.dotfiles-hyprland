@@ -8,8 +8,28 @@
 - **Bar** [eww](https://github.com/elkowar/eww)
 - **Text Editor** [vim](https://github.com/vim/vim)
 - **Music server** [mpd](https://github.com/MusicPlayerDaemon/MPD)
-- **Sound Setup** [pipewire](https://gitlab.freedesktop.org/pipewire/pipewire/))
+- **Sound Setup** [pipewire](https://gitlab.freedesktop.org/pipewire/pipewire/)
 - **Font** [JetBrainsMono](https://github.com/JetBrains/JetBrainsMono)
+
+# Installation
+## OS
+Install Arch with this guide: <a href=Arch-Install.md>Arch-Install.md<a/>
+
+## Dotfiles
+Clone this repo to home directory
+```
+git clone https://github.com/smravec/.dotfiles-hyprland ~/.dotfiles
+```
+
+## Dependencies
+Install dependencies
+```
+paru -S hyprland wl-clipboard wireplumber wofi wget tmux superproductivity-bin python-pip pipewire pipewire-jack pipewire-pulse nodejs mpd mpc kpcli imv hyprpaper-git grim slurp firefox fish eww-wayland alacritty cmatrix neofetch
+```
+
+
+
+
 
 # Gallery
 <img src=Preview2.png/>
