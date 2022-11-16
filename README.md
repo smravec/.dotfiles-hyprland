@@ -12,6 +12,7 @@
 - **Font** [JetBrainsMono](https://github.com/JetBrains/JetBrainsMono)
 
 # Installation
+***Note: this setup was made for the framework laptop and may break on other hardware***
 ## OS
 Install Arch with this guide: <a href=Arch-Install.md>Arch-Install.md<a/>
 
@@ -59,6 +60,10 @@ refresh font cache
 ```
 fc-cache -fv
 ```
+reboot
+```
+sudo reboot
+```
 # Keybinds
 # Wm and Other Keybinds
 |Keybind|Command|
@@ -74,16 +79,16 @@ fc-cache -fv
 ## Alacritty keybinds
 |Keybind|Command|
 |:-----:|:------:|
-|Ctrl + c| copy to clipboard|
-|Ctrl + v |paste from clipboard|
-|Ctrl + Shift + c| kill process|
-|Ctrl + o| scroll up|
-|Ctrl + p| scroll down|
+|Ctrl + c| Copy to clipboard|
+|Ctrl + v | Paste from clipboard|
+|Ctrl + Shift + c| Kill process|
+|Ctrl + o| Scroll up|
+|Ctrl + p| Scroll down|
 
 ## Vim keybinds
 |Keybind|Command|
 |:-----:|:------:|
-|(Visual mode) Ctrl + y | copy to clipboard (system clipboard)|
+|(Visual mode) Ctrl + y | Copy to clipboard (system clipboard)|
 
 ## Tmux keybinds
 |Keybind|Command|
