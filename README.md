@@ -75,6 +75,7 @@ sudo reboot
 |super + up,down,left,right arrow| Change focus|
 |super + 1-5| Change workspace|
 |super + h,j,k,l| Scale windows in tiled mode| 
+|super + m| Kill hyprland|
 
 ****super = Windows Key****
 ## Alacritty keybinds
