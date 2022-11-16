@@ -59,8 +59,42 @@ refresh font cache
 ```
 fc-cache -fv
 ```
+# Keybinds
+# Wm and Other Keybinds
+|Keybind|Command|
+|:-----:|:------:|
+| super + t | Term|
+|super + r | Launcher|
+|super + f | Toggle floating tiled|
+|super + q | Close window|
+|super + up,down,left,right arrow| Change focus|
+|super + 1-5| Change workspace|
 
+****super = Windows Key****
+## Alacritty keybinds
+|Keybind|Command|
+|:-----:|:------:|
+|Ctrl + c| copy to clipboard|
+|Ctrl + v |paste from clipboard|
+|Ctrl + Shift + c| kill process|
+|Ctrl + o| scroll up|
+|Ctrl + p| scroll down|
 
+## Vim keybinds
+|Keybind|Command|
+|:-----:|:------:|
+|(Visual mode) Ctrl + y | copy to clipboard (system clipboard)|
+
+## Tmux keybinds
+|Keybind|Command|
+|:-----:|:------:|
+|Ctrl + x| Main prefix (replaces Ctrl + b)|
+|Main prefix + .| Split term horizontally|
+|Main prefix + /| Split term vertically|
+
+## Custom Aliases
+**mdownload** - download media from youtube <br/>
+**dmount** - mount device as user (editable without sudo) <br/>
 
 # Gallery
 <img src=Preview2.png/>
