@@ -24,10 +24,41 @@ git clone https://github.com/smravec/.dotfiles-hyprland ~/.dotfiles
 ## Dependencies
 Install dependencies
 ```
-paru -S hyprland wl-clipboard wireplumber wofi wget tmux superproductivity-bin python-pip pipewire pipewire-jack pipewire-pulse nodejs mpd mpc kpcli imv hyprpaper-git grim slurp firefox fish eww-wayland alacritty cmatrix neofetch
+paru -S hyprland eww-wayland hyprpaper-git \
+        fish \
+        ttf-jetbrains-mono ttf-material-design-icons breeze-snow-cursor-theme \
+        wireplumber pipewire-jack pipewire-pulse \
+        wofi cliphist \
+        firefox alacritty superproductivity-bin \
+        imv wl-clipboard wget tmux brightnessctl grim slurp mpd mpc kpcli \
+        cmatrix neofetch \
+        python python-pip nodejs \
+        mesa
+```
+```
+pip install yt-dlp
 ```
 
+## Personalization (optional)
+Copy your git token to hyprland config on line 136 to access it on shortcut Super + G
+```
+vim ~/.dotfiles/.config/hypr/hyprland.conf
+```
+also copy your git token to eww clipboard script on line 13 to not show it in the clipboard widget
+```
+vim ~/.dotfiles/.config/eww/Scripts/clipboard-mananger.py
+```
 
+## Final setup
+copy all the files into their dirs
+```
+cp -r ~/.dotfiles/.config/* ~/.config/
+cp -r ~/.dotfiles/home-dir/* ~/
+```
+refresh font cache
+```
+fc-cache -fv
+```
 
 
 
