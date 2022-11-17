@@ -49,12 +49,20 @@ also copy your git token to eww clipboard script on line 13 to not show it in th
 ```
 vim ~/.dotfiles/.config/eww/Scripts/clipboard-mananger.py
 ```
+make some basic dirs
+```
+mkdir ~/Pictures ~/Pictures/Screenshots ~/Music ~/Videos
+```
 
 ## Final setup
 copy all the files into their dirs
 ```
 cp -r ~/.dotfiles/.config/* ~/.config/
 cp -r ~/.dotfiles/home-dir/* ~/
+```
+copy wallpaper (mkdir ~/Pictures if not already present)
+```
+cp ~/.dotfiles/wallpaper.png ~/Pictures
 ```
 refresh font cache
 ```
