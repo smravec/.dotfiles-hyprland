@@ -60,7 +60,7 @@ copy all the files into their dirs
 cp -r ~/.dotfiles/.config/* ~/.config/
 cp -r ~/.dotfiles/home-dir/* ~/
 ```
-copy wallpaper (mkdir ~/Pictures if not already present)
+copy wallpaper (``mkdir ~/Pictures`` if not already present)
 ```
 cp ~/.dotfiles/wallpaper.png ~/Pictures
 ```
