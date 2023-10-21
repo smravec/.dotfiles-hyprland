@@ -27,7 +27,7 @@ Install dependencies
 ```
 paru -S hyprland eww-wayland hyprpaper-git \
         fish \
-        ttf-jetbrains-mono ttf-material-design-icons breeze-snow-cursor-theme \
+        ttf-jetbrains-mono ttf-material-design-icons-webfont breeze-snow-cursor-theme \
         wireplumber pipewire-jack pipewire-pulse \
         wofi cliphist \
         firefox alacritty superproductivity-bin \
