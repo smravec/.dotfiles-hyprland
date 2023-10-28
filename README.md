@@ -33,11 +33,11 @@ paru -S hyprland eww-wayland hyprpaper-git \
         firefox alacritty superproductivity-bin \
         imv wl-clipboard wget tmux brightnessctl grim slurp mpd mpc kpcli \
         cmatrix neofetch \
-        python python-pip nodejs \
+        python python-pip pipx nodejs \
         mesa
 ```
 ```
-pip install yt-dlp
+pipx install yt-dlp
 ```
 
 ## Personalization (optional)
