@@ -37,6 +37,9 @@ paru -S hyprland eww-wayland hyprpaper-git \
         mesa
 ```
 ```
+sudo pacman -S $(pacman -Ssq 'noto-fonts-*')
+```
+```
 pipx install yt-dlp
 ```
 
