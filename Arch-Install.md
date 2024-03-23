@@ -227,7 +227,7 @@ UUID=17ccf50c-592a-41c2-ac96-ec3f8157385c	/         	ext4      	rw,relatime	0 1
 ```
 add efi entry (replace after --disk your disk, after --part number of boot partition, after UUID= your UUID of root partition) 
 ```
-efibootmgr --disk /dev/nvme0n1 --part 1 --create --label "Arch Linux" --loader /vmlinuz-linux-lts --unicode 'root=UUID=17ccf50c-592a-41c2-ac96-ec3f8157385c rw quiet loglevel=3 rd.systemd.show_status=false rd.udev.log_level=3 vt.global_cursor_default=0 inird=/intel-ucode.img initrd=/initramfs-linux-lts.img'
+efibootmgr --disk /dev/nvme0n1 --part 1 --create --label "Arch Linux" --loader /vmlinuz-linux-lts --unicode 'root=UUID=17ccf50c-592a-41c2-ac96-ec3f8157385c rw quiet loglevel=3 rd.systemd.show_status=false rd.udev.log_level=3 vt.global_cursor_default=0 initrd=/intel-ucode.img initrd=/initramfs-linux-lts.img'
 ```
 check if everything is correct
 ```
